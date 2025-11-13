@@ -6,7 +6,7 @@ spring:
     name: config-server
 
   profiles:
-    active: native, git
+    active: git
 
   cloud:
     config:
@@ -20,6 +20,7 @@ spring:
             - configs/common
             - configs/{application}/{profile}
             - configs/{application}
+
 
 eureka:
   instance:
