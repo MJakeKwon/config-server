@@ -17,10 +17,9 @@ spring:
           uri: https://github.com/MJakeKwon/project-configs
           default-label: main
           search-paths:
-            - configs
-            - configs/*
-          basedir: configs
-          clone-on-start: true
+            - configs/common
+            - configs/{application}/{profile}
+            - configs/{application}
 
 eureka:
   instance:
